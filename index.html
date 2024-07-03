@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+    <title>Solution Cleaning </title>
+    <link rel="stylesheet" href="style.css">
+
+
+    </head>
+    <body>
+
+            <header>
+                
+                <div class="container"> 
+                    
+                        <img src="Solution.png" alt="Header Image" class="logo">
+                   
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><button class="book_now">Book Now</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+
+
+
+            <section class="campus">
+                <h1>Our Services </h1>
+                <p>We specialize in cleaning services for offices, homes, clinics, and Airbnbs, ensuring a pristine solution for all your cleaning needs</p>
+                <div class="row">
+                    <div class="campus-col">
+                        <img src="office.jpg">
+                        <div class="layer-overlay">
+                            <h3>Offices</h3>
+                        </div>
+                    </div>
+            
+                    <div class="campus-col">
+                        <img src="house.jpg">
+                        <div class="layer-overlay">
+                            <h3>Homes</h3>
+                            
+                        </div>
+                    </div>
+            
+                    <div class="campus-col">
+                        <img src="clinic.avif">
+                        <div class="layer-overlay">
+                            <h3>Clinics</h3>
+                        </div>
+                    </div>
+            
+                    <div class="campus-col">
+                        <img src="bednbreak.webp">
+                        <div class="layer-overlay">
+                            <h3>Airbnbs</h3>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            <script> 
+                document.addEventListener('DOMContentLoaded', function () {
+              var overlayElements = document.querySelectorAll('.layer-overlay');
+            
+              overlayElements.forEach(function (overlay) {
+                overlay.addEventListener('touchstart', function () {
+                  overlay.classList.toggle('visible');
+                });
+              });
+            });
+            
+            </script>
+            
+            
+            </section>
+       
+
+   
+    </body>
+</html>
